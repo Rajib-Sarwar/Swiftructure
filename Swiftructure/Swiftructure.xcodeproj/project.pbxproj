@@ -13,6 +13,8 @@
 		2160F5142CAC61F80056439B /* Swiftructure.h in Headers */ = {isa = PBXBuildFile; fileRef = 2160F5062CAC61F80056439B /* Swiftructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2160F51E2CAC63780056439B /* BinaryTreeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2160F51D2CAC63780056439B /* BinaryTreeTestCase.swift */; };
 		2160F5202CAC69650056439B /* BinaryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2160F51F2CAC69650056439B /* BinaryNode.swift */; };
+		2160F5222CAC95070056439B /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2160F5212CAC95070056439B /* Stack.swift */; };
+		2160F5242CAC95CC0056439B /* StackTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2160F5232CAC95CC0056439B /* StackTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		2160F5122CAC61F80056439B /* SwiftructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftructureTests.swift; sourceTree = "<group>"; };
 		2160F51D2CAC63780056439B /* BinaryTreeTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeTestCase.swift; sourceTree = "<group>"; };
 		2160F51F2CAC69650056439B /* BinaryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNode.swift; sourceTree = "<group>"; };
+		2160F5212CAC95070056439B /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		2160F5232CAC95CC0056439B /* StackTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 				2160F5062CAC61F80056439B /* Swiftructure.h */,
 				2160F51F2CAC69650056439B /* BinaryNode.swift */,
 				2160F5072CAC61F80056439B /* Swiftructure.docc */,
+				2160F5212CAC95070056439B /* Stack.swift */,
 			);
 			path = Swiftructure;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 			children = (
 				2160F5122CAC61F80056439B /* SwiftructureTests.swift */,
 				2160F51D2CAC63780056439B /* BinaryTreeTestCase.swift */,
+				2160F5232CAC95CC0056439B /* StackTestCase.swift */,
 			);
 			path = SwiftructureTests;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2160F5202CAC69650056439B /* BinaryNode.swift in Sources */,
+				2160F5222CAC95070056439B /* Stack.swift in Sources */,
 				2160F5082CAC61F80056439B /* Swiftructure.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +218,7 @@
 			files = (
 				2160F51E2CAC63780056439B /* BinaryTreeTestCase.swift in Sources */,
 				2160F5132CAC61F80056439B /* SwiftructureTests.swift in Sources */,
+				2160F5242CAC95CC0056439B /* StackTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

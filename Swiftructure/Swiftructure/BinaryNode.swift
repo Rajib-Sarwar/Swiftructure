@@ -18,9 +18,24 @@ class BinaryNode<Type> {
 }
 
 extension BinaryNode {
-    
+    func traverseInOrder(visit: (Type) -> Void) {
+        leftChild?.traverseInOrder(visit: visit)
+        visit(value)
+        rightChild?.traverseInOrder(visit: visit)
+    }
+    
+    func traversePreOrder(visit: (Type) -> Void) {
+        visit(value)
+        leftChild?.traversePreOrder(visit: visit)
+        rightChild?.traversePreOrder(visit: visit)
+    }
+    
+    func traversePostOrder(visit: (Type) -> Void) {
+        leftChild?.traversePostOrder(visit: visit)
+        rightChild?.traversePostOrder(visit: visit)
+        visit(value)
+    }
 }
-
 
 extension BinaryNode: CustomStringConvertible {
     public var description: String {
