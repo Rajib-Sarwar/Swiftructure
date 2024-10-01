@@ -81,8 +81,8 @@
 			children = (
 				2160F5062CAC61F80056439B /* Swiftructure.h */,
 				2160F51F2CAC69650056439B /* BinaryNode.swift */,
-				2160F5072CAC61F80056439B /* Swiftructure.docc */,
 				2160F5212CAC95070056439B /* Stack.swift */,
+				2160F5072CAC61F80056439B /* Swiftructure.docc */,
 			);
 			path = Swiftructure;
 			sourceTree = "<group>";

@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Stack<Type> {
+struct Stack<Type: Equatable> : Equatable {
     var storage: [Type] = []
-    
+        
     func isEmpty() -> Bool {
         return peek() == nil
     }
@@ -31,5 +31,11 @@ struct Stack<Type> {
 extension Stack: CustomStringConvertible {
     var description: String {
         return storage.map{ "\($0)" }.joined(separator: " ")
+    }
+}
+
+extension Stack: ExpressibleByArrayLiteral {
+    init(arrayLiteral elements: Type...) {
+        storage = elements
     }
 }
