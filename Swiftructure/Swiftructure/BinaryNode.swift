@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BinaryNode<Type> {
+class BinaryNode<Type: Equatable> {
     var value: Type
     var leftChild: BinaryNode?
     var rightChild: BinaryNode?
@@ -34,6 +34,18 @@ extension BinaryNode {
         leftChild?.traversePostOrder(visit: visit)
         rightChild?.traversePostOrder(visit: visit)
         visit(value)
+    }
+}
+
+extension BinaryNode {
+    func iterativeInOrder(visit: (Type) -> Void) {
+    }
+    
+    func iterativePreOrder(visit: (Type) -> Void) {
+        
+    }
+    
+    func iterativePostOrder(visit: (Type) -> Void) {
     }
 }
 

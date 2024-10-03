@@ -35,8 +35,19 @@ final class StackTestCase: XCTestCase {
         XCTAssertFalse(stack.isEmpty())
     }
     
-    func test_arrayLiteral() {
-        let stack: Stack = ["Ayon", "Ayham", "Ihaan"]
+    func test_init() {
+        let stack = Stack(["Ayon", "Ayham", "Ihaan"])
         XCTAssertEqual(stack, ["Ayon", "Ayham", "Ihaan"])
+    }
+    
+    func test_arrayLiteral() {
+        let stack: Stack<String> = ["Ayon", "Ayham", "Ihaan"]
+        XCTAssertEqual(stack, ["Ayon", "Ayham", "Ihaan"])
+    }
+    
+    func test_isBalancedParenthesis() {
+        let string = "{{}[](This) (is) (me)(){}()[]}"
+        let stackChallenge = StackChallenge()
+        XCTAssertTrue(stackChallenge.checkBalancedParenthesis(string))
     }
 }

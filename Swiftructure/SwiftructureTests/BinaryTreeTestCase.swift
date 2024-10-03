@@ -49,4 +49,11 @@ final class BinaryTreeTestCase: XCTestCase {
         XCTAssertEqual(testArray, [0,5,1,8,9,7])
     }
 
+    
+    func test_iteratePreOrder() {
+        var testArray: [Int] = []
+        tree.iterativePreOrder { testArray.append($0) }
+//        print(testArray)
+//        XCTAssertEqual(testArray, [7,1,0,5,9,8])
+    }
 }

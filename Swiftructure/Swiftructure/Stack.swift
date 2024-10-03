@@ -8,8 +8,14 @@
 import Foundation
 
 struct Stack<Type: Equatable> : Equatable {
-    var storage: [Type] = []
-        
+    private var storage: [Type] = []
+    
+    init() { }
+    
+    init(_ storage: [Type]) {
+        self.storage = storage
+    }
+    
     func isEmpty() -> Bool {
         return peek() == nil
     }
